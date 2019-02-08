@@ -5,6 +5,7 @@ using UnityEngine;
 public class CreateObject : MonoBehaviour
 {
     public GameObject sphere;
+    private Vector3 mousePos;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,12 @@ public class CreateObject : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(sphere);
+            mousePos = Input.mousePosition;
+            mousePos.z = 10;
+
+            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+            Instantiate(sphere, mousePos, Quaternion.identity);
+            // Instantiate(sphere);
         }
     }
 }
