@@ -16,6 +16,7 @@ public class CreateObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Spawn object with left mouse button
         if (Input.GetMouseButtonDown(0))
         {
             mousePos = Input.mousePosition;
@@ -23,7 +24,6 @@ public class CreateObject : MonoBehaviour
 
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
             Instantiate(sphere, mousePos, Quaternion.identity);
-            // Instantiate(sphere);
         }
     }
 }
