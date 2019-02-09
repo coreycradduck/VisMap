@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6875581093459374050}
   - component: {fileID: 7557270632798738071}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: ConceptSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,7 +112,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -133,7 +133,7 @@ MonoBehaviour:
   sphereMat: {fileID: 2100000, guid: 91959370c25259143959e7e0c5e89474, type: 2}
   noGravityMat: {fileID: 2100000, guid: 0d747796c6998c34d8c1c08ff6362df5, type: 2}
   title: {fileID: 9062460063897212217}
-  bubble: {fileID: 11400000, guid: 28875de2a4e5e5843971eb74e64b93eb, type: 2}
+  concept: {fileID: 11400000, guid: 28875de2a4e5e5843971eb74e64b93eb, type: 2}
 --- !u!1 &9062460063897212217
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,7 +170,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: -0.229}
+  m_AnchoredPosition: {x: -2, y: -0.258}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &5116936757798746467

@@ -4,17 +4,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class ControlObject : MonoBehaviour
+public class ConceptController : MonoBehaviour
 {
     public Material sphereMat;
     public Material noGravityMat;
     public GameObject title;
-    public Bubble bubble;
+    public Concept concept;
+
+    private Vector3 screenPoint;
+    private Vector3 offset;
 
     // Start is called before the first frame update
     void Start()
     {
-        title.GetComponent<TextMeshPro>().text = bubble.title;
+        title.GetComponent<TextMeshPro>().text = concept.title;
     }
 
     // Update is called once per frame
@@ -40,5 +43,20 @@ public class ControlObject : MonoBehaviour
                 gameObject.GetComponent<Rigidbody2D>().gravityScale = 1;
             }
         }
+    }
+
+    void OnMouseDown()
+    {
+        screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
+        offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
+        Debug.Log(screenPoint);
+        Debug.Log(offset);
+    }
+
+    void OnMouseDrag()
+    {
+        Vector3 cursorPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
+        Vector3 cursorPosition = Camera.main.ScreenToWorldPoint(cursorPoint) + offset;
+        transform.position = cursorPosition;
     }
 }
