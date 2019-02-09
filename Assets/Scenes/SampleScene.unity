@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f277687237fb408448fe57ae5e1cce9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bubble: {fileID: 11400000, guid: 28875de2a4e5e5843971eb74e64b93eb, type: 2}
   sphere: {fileID: 5357821120537395015, guid: 4e7d062e7c0d3ad489d0baf9ccef5b5a, type: 3}
 --- !u!20 &519420031
 Camera:
@@ -270,7 +271,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 91959370c25259143959e7e0c5e89474, type: 2}
+  - {fileID: 2100000, guid: 884bd4ebcf532694ca04253b4b8d6b85, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -374,7 +375,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 91959370c25259143959e7e0c5e89474, type: 2}
+  - {fileID: 2100000, guid: 884bd4ebcf532694ca04253b4b8d6b85, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

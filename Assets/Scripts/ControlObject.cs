@@ -1,16 +1,20 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ControlObject : MonoBehaviour
 {
     public Material sphereMat;
     public Material noGravityMat;
+    public GameObject title;
+    public Bubble bubble;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        title.GetComponent<TextMeshPro>().text = bubble.title;
     }
 
     // Update is called once per frame
