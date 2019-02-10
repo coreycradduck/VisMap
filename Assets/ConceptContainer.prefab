@@ -134,6 +134,7 @@ MonoBehaviour:
   noGravityMat: {fileID: 2100000, guid: 0d747796c6998c34d8c1c08ff6362df5, type: 2}
   title: {fileID: 9062460063897212217}
   concept: {fileID: 11400000, guid: 28875de2a4e5e5843971eb74e64b93eb, type: 2}
+  conceptTitle: {fileID: 0}
 --- !u!1 &9062460063897212217
 GameObject:
   m_ObjectHideFlags: 0

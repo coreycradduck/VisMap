@@ -3,13 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ConceptCreator : MonoBehaviour
 {
-    public GameObject concept;
+    public GameObject conceptContainer;
+    public Concept concept;
     private Vector3 mousePos;
     public Button addConceptButton;
     public Button saveCanvasButton;
+    public TMP_InputField conceptTitleInputField;
 
     private void Start()
     {
@@ -27,7 +30,10 @@ public class ConceptCreator : MonoBehaviour
         mousePos = Input.mousePosition;
         mousePos.z = 10;
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-        Instantiate(concept, mousePos, Quaternion.identity);
+        Instantiate(conceptContainer, mousePos, Quaternion.identity);
+
+        concept.title = conceptTitleInputField.text;
+
     }
 
     void SaveCanvas()
