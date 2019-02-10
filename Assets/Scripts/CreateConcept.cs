@@ -5,24 +5,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ConceptCreator : MonoBehaviour
+public class CreateConcept : MonoBehaviour
 {
     public GameObject conceptContainer;
     public Concept concept;
     private Vector3 mousePos;
     public Button addConceptButton;
-    public Button saveCanvasButton;
     public TMP_InputField conceptTitleInputField;
 
-    private void Start()
+    void Start()
     {
         addConceptButton.onClick.AddListener(AddConcept);
-        saveCanvasButton.onClick.AddListener(SaveCanvas);
-    }
-
-    void Update()
-    {
-
     }
 
     void AddConcept()
@@ -34,10 +27,5 @@ public class ConceptCreator : MonoBehaviour
 
         concept.title = conceptTitleInputField.text;
 
-    }
-
-    void SaveCanvas()
-    {
-        Debug.Log("Saving!");
     }
 }

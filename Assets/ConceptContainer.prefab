@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6875581093459374050}
   - component: {fileID: 7557270632798738071}
   m_Layer: 0
-  m_Name: ConceptSphere
+  m_Name: ConceptContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -130,11 +130,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e07f47a02028934fa3b17274967328a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sphereMat: {fileID: 2100000, guid: 91959370c25259143959e7e0c5e89474, type: 2}
-  noGravityMat: {fileID: 2100000, guid: 0d747796c6998c34d8c1c08ff6362df5, type: 2}
-  title: {fileID: 9062460063897212217}
+  defaultContainerMat: {fileID: 2100000, guid: 91959370c25259143959e7e0c5e89474, type: 2}
+  selectionMat: {fileID: 2100000, guid: 0d747796c6998c34d8c1c08ff6362df5, type: 2}
+  containerText: {fileID: 9062460063897212217}
   concept: {fileID: 11400000, guid: 28875de2a4e5e5843971eb74e64b93eb, type: 2}
-  conceptTitle: {fileID: 0}
 --- !u!1 &9062460063897212217
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,7 +148,7 @@ GameObject:
   - component: {fileID: 4409677244343335497}
   - component: {fileID: 8267806100655353595}
   m_Layer: 0
-  m_Name: Title
+  m_Name: ContainerText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
