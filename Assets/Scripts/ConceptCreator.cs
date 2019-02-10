@@ -8,11 +8,13 @@ public class ConceptCreator : MonoBehaviour
 {
     public GameObject concept;
     private Vector3 mousePos;
-    public Button create;
+    public Button addConceptButton;
+    public Button saveCanvasButton;
 
     private void Start()
     {
-        create.onClick.AddListener(AddConcept);
+        addConceptButton.onClick.AddListener(AddConcept);
+        saveCanvasButton.onClick.AddListener(SaveCanvas);
     }
 
     void Update()
@@ -26,5 +28,10 @@ public class ConceptCreator : MonoBehaviour
         mousePos.z = 10;
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
         Instantiate(concept, mousePos, Quaternion.identity);
+    }
+
+    void SaveCanvas()
+    {
+        Debug.Log("Saving!");
     }
 }
