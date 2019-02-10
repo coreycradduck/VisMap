@@ -6,4 +6,5 @@ using UnityEngine;
 public class Concept : ScriptableObject
 {
     public string title;
+    public bool selected;
 }
