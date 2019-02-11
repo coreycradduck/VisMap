@@ -6,10 +6,11 @@ using TMPro;
 
 public class ControlConcept : MonoBehaviour
 {
-    public Material defaultContainerMat;
+    public Concept concept;
+
+    public Material defaultMat;
     public Material selectionMat;
     public GameObject containerText;
-    public Concept concept;
 
     private Vector2 mousePosition;
     private Vector3 screenPoint;
@@ -46,28 +47,26 @@ public class ControlConcept : MonoBehaviour
     void Select(GameObject gameObject)
     {
         Deselect();
+        gameObject.GetComponent<ControlConcept>().concept.selected = true;
         gameObject.GetComponent<Renderer>().material = selectionMat;
-        Debug.Log(gameObject.GetComponent<Renderer>().material);
-        // Add bool property "selected"
     }
 
     void Deselect()
     {
         GameObject[] concepts = GameObject.FindGameObjectsWithTag("Concept");
-        // Add bool property "deselected"
         foreach (GameObject concept in concepts)
         {
-            concept.GetComponent<Renderer>().material = defaultContainerMat;
+            gameObject.GetComponent<ControlConcept>().concept.selected = false;
+            concept.GetComponent<Renderer>().material = defaultMat;
         }
     }
 
     void Delete()
     {
         GameObject[] concepts = GameObject.FindGameObjectsWithTag("Concept");
-        // Check bool property selected"
         foreach (GameObject concept in concepts)
         {
-            if (concept.GetComponent<Renderer>().material == selectionMat)
+            if (concept.GetComponent<ControlConcept>().concept.selected == true)
             {
                 Destroy(concept);
             }

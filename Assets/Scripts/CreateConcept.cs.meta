@@ -3,7 +3,11 @@ guid: f277687237fb408448fe57ae5e1cce9d
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - conceptContainer: {instanceID: 0}
+  - concept: {instanceID: 0}
+  - addConceptButton: {instanceID: 0}
+  - conceptTitleInputField: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

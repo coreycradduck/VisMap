@@ -130,10 +130,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e07f47a02028934fa3b17274967328a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultContainerMat: {fileID: 2100000, guid: 91959370c25259143959e7e0c5e89474, type: 2}
+  concept:
+    title: 
+    selected: 0
+  defaultMat: {fileID: 2100000, guid: 91959370c25259143959e7e0c5e89474, type: 2}
   selectionMat: {fileID: 2100000, guid: 0d747796c6998c34d8c1c08ff6362df5, type: 2}
   containerText: {fileID: 9062460063897212217}
-  concept: {fileID: 11400000, guid: 28875de2a4e5e5843971eb74e64b93eb, type: 2}
 --- !u!1 &9062460063897212217
 GameObject:
   m_ObjectHideFlags: 0

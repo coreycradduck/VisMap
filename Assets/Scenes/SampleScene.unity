@@ -703,9 +703,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conceptContainer: {fileID: 5357821120537395015, guid: 4e7d062e7c0d3ad489d0baf9ccef5b5a,
     type: 3}
-  concept: {fileID: 11400000, guid: 28875de2a4e5e5843971eb74e64b93eb, type: 2}
   addConceptButton: {fileID: 238140991}
-  conceptTitleInputField: {fileID: 1464274284}
+  conceptInputField: {fileID: 1464274284}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0

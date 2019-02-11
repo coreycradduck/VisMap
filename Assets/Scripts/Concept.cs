@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Concept", menuName = "Concept")]
-public class Concept : ScriptableObject
+[System.Serializable]
+public class Concept
 {
     public string title;
     public bool selected;
